@@ -1,0 +1,119 @@
+.App {
+  margin: 0;
+  align-items: center;
+  height: 100vh;
+  background: #ffff;
+
+}
+
+
+.title {
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+}
+
+.search {
+  display: flex;
+  margin: 100px 100px;
+}
+
+.animated-button {
+  margin: 10px;
+  margin-left: 10%;
+  --primary-color: #fe5f55;
+  --secondary-color: #f0e6ef;
+  --border-width: 0.1px;
+  --border-radius: 15px;
+  --text-color: #fff;
+  --hover-scale: 1.1;
+  --hover-duration: 0.5s;
+  --border-color: transparent;
+  --text-shadow-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  cursor: pointer;
+  width: 10em;
+  height: 5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 0.75em 1.5em;
+  position: inherit;
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
+  transition: all var(--hover-duration) ease-in-out;
+}
+
+.animated-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: inherit;
+  transition: all var(--hover-duration) ease-in-out;
+  z-index: -1;
+}
+
+.animated-button:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  text-shadow: none;
+  transform: scale(var(--hover-scale));
+}
+
+.animated-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+textarea {
+  /* margin-left: -25rem; */
+  background: rgba(226, 226, 226, 0.407);
+  height: 150px;
+  width: 45em;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+textarea:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.phrases {
+  display: flex;
+  margin-left: 10rem;
+  font-size: 25px;
+}
+
+.phrase {
+  list-style-type: none;
+  margin: 10px;
+  display: inline-flex;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  border: solid black 0.5px;
+  cursor: pointer;
+}
+
+.phrase:hover {
+  background: rgba(54, 54, 54, 0.158);
+}
+
+/* .copy{
+  float: right;
+  cursor: pointer;
+  border: none;
+  height: 100px;
+  cursor: pointer;
+} */

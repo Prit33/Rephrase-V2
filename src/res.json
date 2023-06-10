@@ -1,0 +1,19 @@
+{
+    "response": {
+        "host": "apis.webxspark.com",
+        "end_point": "webxspark-apis.herokuapp.com",
+        "authToken": "6f99dc",
+        "requested_sentence": "how old are you",
+        "sentences": [
+            "how young are you.",
+            "what age do you have.",
+            "how old is your age.",
+            "how early are you.",
+            "what is your age.",
+            "how old do you stand.",
+            "when are you.",
+            "how old yourself."
+        ]
+    },
+    "execution_time": 0.7896509170532227
+}
